@@ -46,6 +46,4 @@ void main() {
   s1.check_waiver(3.30);
   stuednt s2 = stuednt("Sushanto", "6026", "EEE", 3.00);
   s2.check_waiver(3.00);
-
-  School sc = School("DGM high school", "65456", "shdsd", 3.25);
 }

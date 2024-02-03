@@ -14,7 +14,7 @@ class car {
 }
 
 void main() {
-  car c1 = car(DateTime.now(), "bugatti", 120000);
+  car c1 = car(DateTime(2021, 9, 10), "bugatti", 120000);
 
   c1.showname();
 }
