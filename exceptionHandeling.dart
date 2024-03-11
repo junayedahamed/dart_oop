@@ -1,5 +1,7 @@
 //custom exception
 
+// ignore_for_file: deprecated_member_use
+
 class value implements Exception {
   lessthanFive() {
     return 'less than 5';
