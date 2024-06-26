@@ -8,3 +8,9 @@ class ex {
     return _age;
   }
 }
+
+void main() {
+  ex e = ex();
+  e.setAge(15);
+  print(e.getAge());
+}
