@@ -1,8 +1,8 @@
 import 'where_list.dart';
 
 class sum {
-  operator +(number) {
-    print(number + 1);
+  operator +(number1) {
+    print(number1);
   }
 
   operator *(number) {
