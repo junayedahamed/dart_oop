@@ -11,7 +11,6 @@ class person {
   final Role role;
 
   person(this.name, this.dept, this.gender, this.role);
-
   checkrole() {
     switch (this.role) {
       case Role.Admin:
