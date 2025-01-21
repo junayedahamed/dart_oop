@@ -3,5 +3,5 @@ void main() {
   final doublednum = numbers.map((number) => number * 2);
   // print(doublednum.toString());
   final subscription = doublednum.listen(print);
-  // subscription.cancel();
+  subscription.cancel();
 }
