@@ -2,6 +2,17 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
+// class DataModel {
+//   final List data;
+//   var msg = List;
+
+//   DataModel({required this.data});
+
+//   factory DataModel.fromJson(dynamic json) {
+//     return DataModel(data: json['value'] as List);
+//   }
+// }
+
 class GetMethod {
   Future<dynamic> get() async {
     try {
