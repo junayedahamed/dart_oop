@@ -27,4 +27,6 @@ void main() {
 
   DeleteMethodClass del = DeleteMethodClass();
   del.deleteMethod(1);
+
+  del.deleteMethod(2);
 }
