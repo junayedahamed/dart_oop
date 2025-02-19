@@ -14,12 +14,14 @@ void main() {
     print(element.name);
   }
 
-  print(passMatch("@12344656adjjdd"));
+  print(passMatch("@Ab1513583280"));
 }
 
 passMatch(String pass) {
-  RegExp exp = RegExp(r"/^w+([-+.\']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/");
-  var match = exp.hasMatch(pass);
+  var match =
+      RegExp(r'^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[#?!@$%^&*-]).{8,}$')
+          .hasMatch(pass);
+
   print(match);
   if (match) {
     return "valid pass";
