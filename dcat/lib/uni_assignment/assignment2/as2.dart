@@ -8,6 +8,10 @@ class Calulate {
   operator -(int num) {
     return val - num;
   }
+
+  operator *(int num) {
+    return val * num;
+  }
 }
 
 void main() {
