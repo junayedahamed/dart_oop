@@ -20,7 +20,7 @@ void main() {
   streamSubscription.cancel();
 
   try {
-    StreamSubscription<int> strsub2 = streamController.stream.listen((onData) {
+    streamController.stream.listen((onData) {
       print(onData);
     });
   } catch (e) {
