@@ -6,6 +6,7 @@ void main() async {
   try {
     final dir = Directory.current.path;
     //  WidgetsFlutterBinding.ensureInitialized();
+    //  WidgetsFlutterBinding.ensureInitialized();
     await Hive.initFlutter(dir);
 
     var box = await Hive.openBox<String>('myBox');
