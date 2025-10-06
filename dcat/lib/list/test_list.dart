@@ -38,7 +38,7 @@ class ModelAny {
 class Post {
   List<Model1> m1 = [];
   List<Model2> m2 = [];
-  List<ModelAny> _any = [];
+  final List<ModelAny> _any = [];
   void add(Model1 m) {
     m1.add(m);
     _any.add(ModelAny.parse(m)!);

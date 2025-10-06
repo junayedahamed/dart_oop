@@ -9,6 +9,7 @@ environment:
 # Add regular dependencies here.
 dependencies:
   dio: ^5.7.0
+  dotenv: ^4.2.0
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   http: ^1.2.2
