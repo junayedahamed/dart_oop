@@ -76,7 +76,7 @@ Future<UserModel?> loginUser(
   // print(token.body);
   // print("\n\n");
 
-  print(token.statusCode);
+  // print(token.statusCode);
   if (token.statusCode == 200) {
     final res = await http.post(url,
         body: jsonEncode({"email": email, "password": password}),
@@ -88,8 +88,15 @@ Future<UserModel?> loginUser(
 
     print(res.statusCode);
     if (res.statusCode == 200) {
-      final user = UserModel.fromJson(jsonDecode(res.body)['user'][0]);
-      return user;
+      print(res.body);
+
+      if (jsonDecode(res.body)['user'] != null) {
+        final user = UserModel.fromJson(jsonDecode(res.body)['user'][0]);
+        return user;
+      } else {
+        print(jsonDecode(res.body)['message']);
+        return null;
+      }
     }
   } else {
     // print(token.body);
@@ -110,7 +117,7 @@ void main() async {
   // final ok = await createUser(
   //     "junayed", "junayedahamed660@gmail.com", "junayedaahamed");
   // if (ok) {
-  final user = await loginUser("junayedahamed660@gmail.com", "junayedaahamed",
+  final user = await loginUser("junayedahamed660@gmail.com", "junayedahamed",
       env["JWT_URI"]!, env["LOGIN_URI"]!);
   if (user != null) {
     print(user.id);
