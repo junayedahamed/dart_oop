@@ -15,12 +15,12 @@ void main() {
   Person p5 = Person("ajoy", 6.0, false);
   Person p6 = Person("aong", 5.4, false);
 
-  List<int> myint = List.generate(
-    10,
-    (index) {
-      return index;
-    },
-  );
+  // List<int> myint = List.generate(
+  //   10,
+  //   (index) {
+  //     return index;
+  //   },
+  // );
 
   // myint.forEach((action) {
   //   if (action % 2 == 0) {
